@@ -180,15 +180,17 @@ section {
 
 .section__pic-container img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover; /* This ensures the image fills the circular container */
 }
+
 .section__pic-container2 {
   display: flex;
   height: 400px;
   width: 400px;
   margin: auto;
 }
+
 .section__text {
   align-self: center;
   text-align: center;
@@ -287,6 +289,7 @@ section {
 }
 
 .about-details-container {
+  width: 70%;
   justify-content: center;
   flex-direction: column;
 }
@@ -382,8 +385,8 @@ article {
 /* Default styles for project images */
 .project-img {
   border-radius: 1rem;
-  width: 400px; /* Set a fixed width for the project images */
-  height: 300px; /* Automatically adjust height to maintain aspect ratio */
+  width: 90%; /* Set a fixed width for the project images */
+  height: 90%; /* Automatically adjust height to maintain aspect ratio */
 }
 @media screen and (min-width: 1800px) {
   .project-img {
@@ -443,7 +446,10 @@ article {
   gap: 0.5rem;
   margin: 1rem;
 }
-
+.contact-info-container img {
+  width: 30px;
+  height: 30px;
+}
 .contact-info-container p {
   font-size: larger;
 }
