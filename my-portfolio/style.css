@@ -350,21 +350,22 @@ section {
   display: flex;
   text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
   justify-content: space-around;
+  gap: 2.5rem;
 }
 
 article {
   display: flex;
-  width: 10rem;
-  justify-content: space-around;
+  align-items: center; /* Align items vertically */
+  width: 45%; /* Adjust this value so two articles fit in a row within .article-container */
   gap: 0.5rem;
 }
 
-article .icon {
+.icon {
   cursor: default;
+  /* Adjust the size as needed */
 }
+
 
 /* PROJECTS SECTION */
 
