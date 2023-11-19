@@ -183,6 +183,7 @@ section {
   height: auto;
   object-fit: cover; /* This ensures the image fills the circular container */
 }
+
 .section__text {
   align-self: center;
   text-align: center;
