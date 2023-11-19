@@ -354,6 +354,7 @@ section {
   gap: 2.5rem;
 }
 
+
 article {
   display: flex;
   align-items: center; /* Align items vertically */
@@ -378,10 +379,31 @@ article {
   background: rgb(250, 250, 250);
 }
 
+/* Default styles for project images */
 .project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  border-radius: 1rem;
+  width: 400px; /* Set a fixed width for the project images */
+  height: 300px; /* Automatically adjust height to maintain aspect ratio */
+}
+@media screen and (min-width: 1800px) {
+  .project-img {
+    width: 900px; /* Adjust the width for smaller screens */
+    height: 750px; /* Automatically adjust height to maintain aspect ratio */
+  }
+}
+/* Media query for smaller screens (e.g., below 768px) */
+@media screen and (max-width: 768px) {
+  .project-img {
+    width: 300px; /* Adjust the width for smaller screens */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+  }
+}
+/* Media query for phone screens (e.g., below 480px) */
+@media screen and (max-width: 480px) {
+  .project-img {
+    width: 200px; /* Adjust the width for phone screens */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+  }
 }
 
 .project-title {
