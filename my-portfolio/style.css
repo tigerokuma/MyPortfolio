@@ -180,15 +180,17 @@ section {
 
 .section__pic-container img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover; /* This ensures the image fills the circular container */
 }
+
 .section__pic-container2 {
   display: flex;
   height: 400px;
   width: 400px;
   margin: auto;
 }
+
 .section__text {
   align-self: center;
   text-align: center;
@@ -287,6 +289,7 @@ section {
 }
 
 .about-details-container {
+  width: 70%;
   justify-content: center;
   flex-direction: column;
 }
@@ -354,6 +357,7 @@ section {
   gap: 2.5rem;
 }
 
+
 article {
   display: flex;
   align-items: center; /* Align items vertically */
@@ -378,10 +382,31 @@ article {
   background: rgb(250, 250, 250);
 }
 
+/* Default styles for project images */
 .project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  border-radius: 1rem;
+  width: 90%; /* Set a fixed width for the project images */
+  height: 90%; /* Automatically adjust height to maintain aspect ratio */
+}
+@media screen and (min-width: 1800px) {
+  .project-img {
+    width: 900px; /* Adjust the width for smaller screens */
+    height: 750px; /* Automatically adjust height to maintain aspect ratio */
+  }
+}
+/* Media query for smaller screens (e.g., below 768px) */
+@media screen and (max-width: 768px) {
+  .project-img {
+    width: 300px; /* Adjust the width for smaller screens */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+  }
+}
+/* Media query for phone screens (e.g., below 480px) */
+@media screen and (max-width: 480px) {
+  .project-img {
+    width: 200px; /* Adjust the width for phone screens */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+  }
 }
 
 .project-title {
@@ -421,7 +446,10 @@ article {
   gap: 0.5rem;
   margin: 1rem;
 }
-
+.contact-info-container img {
+  width: 30px;
+  height: 30px;
+}
 .contact-info-container p {
   font-size: larger;
 }
