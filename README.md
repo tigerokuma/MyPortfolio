@@ -4,7 +4,7 @@
 Welcome to the repository for my personal portfolio website. This website showcases my skills, projects, and professional experiences as a Computer Science student. The site is designed to be intuitive, responsive, and accessible, providing a comprehensive view of my academic and professional journey.
 
 ## Website Link
-[Visit My Portfolio](https://sunisdark.github.io/MyPortfolio/)
+[Visit My Portfolio](https://tigerokuma.github.io/MyPortfolio/)
 
 ## Technology Stack
 This website is built using the following technologies:
